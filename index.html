@@ -29,36 +29,36 @@
             <div class="md:hidden flex items-center gap-4">
                 <div class="h-8 w-8 rounded-full border-2 border-primary"></div>
 
-                <button class="md:hidden text-primary w-8 h-4 z-1 flex flex-col items-center justify-between">
-                    <span class="bar1 border text-white w-5 transform-[90%]"></span>
-                    <span class="bar2 border text-border w-5 transform-[90%]"></span>
-                    <span class="bar3 border text-border w-5 transform-[90%]"></span>
+                <button id="menu-toggle" class="md:hidden text-primary w-8 h-4 z-1 flex flex-col items-center justify-between">
+                    <span id="bar1" class="border text-white w-5 transform-[90%]"></span>
+                    <span id="bar2" class="border text-border w-5 transform-[90%]"></span>
+                    <span id="bar3" class="border text-border w-5 transform-[90%]"></span>
                 </button>
             </div>
 
             <div class="absolute bg-border md:h-[450%] lg:h-[400%] w-[40%] right-0 -top-50 transform rotate-135 md:translate-x-[30%] lg:translate-x-[40%] transition fade-in duration-300"></div>
         </div>
 
+        <!-- Full-page blur overlay -->
+        <div id="menu-overlay" class="hidden h-screen w-full fixed inset-0 backdrop-blur-lg bg-black/70 z-40"></div>
+
         <!-- Mobile Menu-->
-         <div id="mobile-menu" class="hidden w-[85%] text-align absolute top-0 right-0 z-20 p-5 backdrop-blur-lg bg-blur-sm">
-            <div class="flex items-center justify-between py-5 border-b border-border mb-5">
-               <div class="text-white font-bold">Forr3ver Dev</div> 
-               <div class="h-8 w-8 border-2 border-white rounded-full"></div>
-            </div>
+        <div id="mobile-menu" class="hidden w-[85%] text-left absolute top-0 right-0 z-50 p-5 pt-20 backdrop-blur-lg bg-bg">
+
             <ul class="flex flex-col justify-center items-center gap-8 font-semibold text-text-primary text-lg border-b pb-5 mb-5">
-                <li class="relative bg-surface rounded-xl w-full p-4 border-l-5 border-primary"><a href="index.html"><i class="fa fa-home text-primary mr-3"></i><span class="animate-pulse absolute inline-flex h-2 w-2 rounded-full bg-primary right-10 top-[50%] -translate-y-[50%]"></span> Home</a></li>
-                <li class="w-full p-4"><a href="about.html"><i class="fa-regular fa-user mr-3"></i>About</a></li>
-                <li class="w-full p-4"><a href="my-works.html"><i class="fa-solid fa-briefcase mr-3"></i>My Works</a></li>
-                <li class="w-full p-4"><a href="services.html"><i class="fa-solid fa-layer-group mr-3"></i>Services</a></li>
-                <li class="w-full p-4"><a href="contact.html"><i class="fa-regular fa-envelope mr-3"></i>Contact</a></li>
+                <a href="index.html" class="w-full"><li class="relative bg-surface rounded-xl border-l-5 border-primary p-4"><i class="fa fa-home text-primary mr-3"></i><span class="animate-pulse absolute inline-flex h-2 w-2 rounded-full bg-primary right-10 top-[50%] -translate-y-[50%]"></span> Home</li></a>
+                <a href="about.html" class="w-full p-4"><li><i class="fa-regular fa-user mr-3"></i>About</li></a>
+                <a href="my-works.html" class="w-full p-4"><li><i class="fa-solid fa-briefcase mr-3"></i>My Works</li></a>
+                <a href="services.html" class="w-full p-4"><li><i class="fa-solid fa-layer-group mr-3"></i>Services</li></a>
+                <a href="contact.html" class="w-full p-4"><li><i class="fa-regular fa-envelope mr-3"></i>Contact</li></a>
             </ul>
 
             <div class=" flex flex-col gap-4 mt-10">
-                    <button class="bg-primary p-3 text-white cursor-pointer active:opacity-60 active:-translate-y-1 transition duration-400 rounded-lg">View My Works</button>
+                <button class="bg-primary p-3 text-white cursor-pointer active:opacity-60 active:-translate-y-1 transition duration-400 rounded-lg">View My Works</button>
 
-                    <button class="outline outline-primary p-3 text-primary cursor-pointer active:bg-border active:-translate-y-1 transition duration-400 rounded-lg">Get in Touch</button>
+                <button class="outline outline-primary p-3 text-primary cursor-pointer active:bg-border active:-translate-y-1 transition duration-400 rounded-lg">Get in Touch</button>
             </div>
-         </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -188,7 +188,7 @@
                 <!-- Portfolio 1 -->
                 <div class="bg-surface rounded-xl flex flex-col justify-between">
                     <div class="relative group cursor-pointer" data-gallery="savora">
-                    <img src="images/portfolio/savora.jpg" alt="Fithub" class="rounded-t-xl">
+                    <img src="images/portfolio/savora.jpg" alt="Savora" class="rounded-t-xl">
                     <div class="absolute top-0 w-full h-full bg-surface/20 flex items-center justify-center text-primary font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <div class="bg-border py-1 px-2 rounded-lg">
                             <i class="fa-solid fa-up-right-and-down-left-from-center mr-2"></i>View Gallery
@@ -214,7 +214,7 @@
             <!-- Portfolio 2 -->
             <div class="bg-surface rounded-xl flex flex-col justify-between">
                 <div class="relative group cursor-pointer" data-gallery="fithub">
-                    <img src="images/portfolio/Fithub.jpg" alt="Fithub" class="rounded-t-xl">
+                    <img src="images/portfolio/fithub.jpg" alt="Fithub" class="rounded-t-xl">
                     <div class="absolute top-0 w-full h-full bg-surface/20 flex items-center justify-center text-primary font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <div class="bg-border py-1 px-2 rounded-lg">
                             <i class="fa-solid fa-up-right-and-down-left-from-center mr-2"></i>View Gallery
@@ -254,93 +254,6 @@
 
             <div id="gallery-thumbs" class="flex gap-2"></div>
         </div>
-
-        <script>
-            const galleries = {
-                savora: [
-                    { type: 'image', src: 'images/portfolio/savora-desktop.png' },
-                    { type: 'image', src: 'images/portfolio/savora-mobile.png' },
-                    { type: 'image', src: 'images/portfolio/savora-order-feature.png' },
-                    { type: 'video', src: 'images/portfolio/savora-demo.mp4', thumb: 'images/portfolio/savora-demo-thumb.png' }
-                ],
-                fithub: [
-                    { type: 'image', src: 'images/portfolio/fithub-desktop.png' },
-                    { type: 'image', src: 'images/portfolio/fithub-mobile.png' },
-                    { type: 'image', src: 'images/portfolio/fithub-grid.jpg' },
-                    { type: 'video', src: 'images/portfolio/fithub-demo.mp4', thumb: 'images/portfolio/fithub-demo-thumb.png' }
-                ]
-            };
-
-            let currentGallery = [];
-            let currentIndex = 0;
-
-            function showImage() {
-                const item = currentGallery[currentIndex];
-                const mediaContainer = document.getElementById('gallery-media');
-
-                mediaContainer.innerHTML = ''; // clear whatever was there before
-
-                if (item.type === 'video') {
-                    const video = document.createElement('video');
-                    video.src = item.src;
-                    video.controls = true;
-                    video.autoplay = true;
-                    video.muted = true;
-                    video.preload = 'metadata';
-                    video.className = 'max-w-[80vw] max-h-[65vh] rounded-lg mx-auto my-auto';
-                    mediaContainer.appendChild(video);
-                } else {
-                    const img = document.createElement('img');
-                    img.src = item.src;
-                    img.className = 'max-w-[80vw] max-h-[65vh] rounded-lg mx-auto my-auto';
-                    mediaContainer.appendChild(img);
-                }
-
-                document.getElementById('gallery-counter').textContent = `${currentIndex + 1} / ${currentGallery.length}`;
-
-                const thumbStrip = document.getElementById('gallery-thumbs');
-                thumbStrip.innerHTML = '';
-
-                currentGallery.forEach((thumbItem, i) => {
-                    const thumb = document.createElement('img');
-                    thumb.src = thumbItem.thumb || thumbItem.src;
-                    thumb.className = `w-16 h-16 rounded cursor-pointer border-2 flex items-center justify-center bg-surface ${i === currentIndex ? 'border-primary' : 'border-transparent'}`;
-
-                    if (thumbItem.type === 'video') {
-                        thumb.innerHTML = '<i class="fa-solid fa-play text-primary"></i>';
-                    } else {
-                        thumb.innerHTML = `<img src="${thumbItem.src}" class="w-full h-full object-cover rounded">`;
-                    }
-                    thumb.addEventListener('click', () => { currentIndex = i; showImage(); });
-                    thumbStrip.appendChild(thumb);
-                });
-            }
-
-            document.querySelectorAll('[data-gallery]').forEach(img => {
-                img.addEventListener('click', () => {
-                    currentGallery = galleries[img.dataset.gallery];
-                    currentIndex = 0;
-                    showImage();
-                    document.getElementById('gallery-modal').classList.remove('hidden');
-                    document.getElementById('gallery-modal').classList.add('flex');
-                });
-            });
-
-            document.getElementById('gallery-next').addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % currentGallery.length;
-                showImage();
-            });
-
-            document.getElementById('gallery-prev').addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
-                showImage();
-            });
-
-            document.getElementById('gallery-close').addEventListener('click', () => {
-                document.getElementById('gallery-modal').classList.add('hidden');
-                document.getElementById('gallery-modal').classList.remove('flex');
-            });
-        </script>
 
          <!-- My Services -->
           <section class="mt-10 mb-20">
@@ -464,5 +377,8 @@
      </footer>
 
     <a href="#"><i class="fa-brands fa-whatsapp fixed bottom-5 right-5 text-2xl p-3 bg-green-400 rounded-full text-white animate-pulse"></i></a>
+
+    <script src="script.js"></script>
+    <script src="portfolio-gallery.js"></script>
 </body>
 </html>
