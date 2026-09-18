@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0C1D32;
+  --color-surface: #1B2C42;
+  --color-primary: #007AAD;
+  --color-text-primary: #FFFBFC;
+  --color-text-muted: #D9E2E9;
+  --color-border: #D9E2E9;
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Karla", sans-serif;
+}
+
+/* Full dark-mode token set now:
+
+| `--color-bg` | `#0C1D32` | Page background |
+| `--color-surface` | `#1B2C42` | Cards, section panels |
+| `--color-primary` | `#007AAD` | CTAs, links, active states |
+| `--color-text-primary` | `#FFFBFC` | Headings, body text |
+| `--color-text-muted` | `#D9E2E9` | Secondary text, labels |
+| `--color-border` | `#D9E2E9` (10-15% opacity) | Dividers, card borders |
+
+This gives you the same three-layer feel your reference image has (bg → surface → accent) while staying entirely inside your existing brand palette — nothing borrowed from outside it.
+
+Ready to move to project setup (folder structure, Tailwind init, `@theme` tokens) next? */

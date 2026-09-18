@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/fe6bbb0a27.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Forr3ver Dev</title>
+</head>
+<body class="bg-bg w-full relative">
+    <nav class="fixed w-full backdrop-blur-lg z-100">
+        <!-- Desktop nav: Add bottom border glow -->
+        <div class="flex items-center justify-around border border-border w-[90%] lg:w-[60%] mx-auto rounded-4xl mt-5 py-2 md:py-3 bg relative overflow-hidden">
+            <div class="text-white z-1 text-bg text-center">Forr3ver Dev</div>
+
+            <ul class="hidden md:flex justify-center items-center gap-4 font-semibold text-text-primary">
+                <li><a href="index.html" class="hover:text-primary transition duration-300">Home</a></li>
+                <li><a href="about.html" class="text-primary border-b-2 pb-1">About</a></li>
+                <li><a href="my-works.html" class="hover:text-primary transition duration-300">My Works</a></li>
+                <li><a href="services.html" class="hover:text-primary transition duration-300">Services</a></li>
+                <li><a href="contact.html" class="hover:text-primary transition duration-300">Contact</a></li>
+            </ul>
+
+            <button class="hidden md:flex z-1 text-white bg-primary px-3 py-2 rounded-3xl shadow-2xl shadow-bg hover:-translate-y-1 cursor-pointer transition duration-700">Contact Me</button>
+
+            <div class="md:hidden flex items-center gap-4">
+                <div class="h-8 w-8 rounded-full border-2 border-primary"></div>
+
+                <button class="md:hidden text-primary w-8 h-4 z-1 flex flex-col items-center justify-between">
+                    <span class="bar1 border text-white w-5 transform-[90%]"></span>
+                    <span class="bar2 border text-border w-5 transform-[90%]"></span>
+                    <span class="bar3 border text-border w-5 transform-[90%]"></span>
+                </button>
+            </div>
+
+            <div class="absolute bg-border md:h-[450%] lg:h-[400%] w-[40%] right-0 -top-50 transform rotate-135 md:translate-x-[30%] lg:translate-x-[40%] transition fade-in duration-300"></div>
+        </div>
+
+        <!-- Mobile Menu-->
+         <div id="mobile-menu" class="hidden w-[85%] text-align absolute top-0 right-0 z-20 p-5 backdrop-blur-lg bg-blur-sm">
+            <div class="flex items-center justify-between py-5 border-b border-border mb-5">
+               <div class="text-white font-bold">Forr3ver Dev</div> 
+               <div class="h-8 w-8 border-2 border-white rounded-full"></div>
+            </div>
+            <ul class="flex flex-col justify-center items-center gap-8 font-semibold text-text-primary text-lg border-b pb-5 mb-5">
+                <li class="relative bg-surface rounded-xl w-full p-4 border-l-5 border-primary"><a href="index.html"><i class="fa fa-home text-primary mr-3"></i><span class="animate-pulse absolute inline-flex h-2 w-2 rounded-full bg-primary right-10 top-[50%] -translate-y-[50%]"></span> Home</a></li>
+                <li class="w-full p-4"><a href="about.html"><i class="fa-regular fa-user mr-3"></i>About</a></li>
+                <li class="w-full p-4"><a href="my-works.html"><i class="fa-solid fa-briefcase mr-3"></i>My Works</a></li>
+                <li class="w-full p-4"><a href="services.html"><i class="fa-solid fa-layer-group mr-3"></i>Services</a></li>
+                <li class="w-full p-4"><a href="contact.html"><i class="fa-regular fa-envelope mr-3"></i>Contact</a></li>
+            </ul>
+
+            <div class=" flex flex-col gap-4 mt-10">
+                <button class="bg-primary p-3 text-white cursor-pointer active:opacity-60 active:-translate-y-1 transition duration-400 rounded-lg">View My Works</button>
+
+                <button class="outline outline-primary p-3 text-primary cursor-pointer active:bg-border active:-translate-y-1 transition duration-400 rounded-lg">Get in Touch</button>
+            </div>
+         </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="w-full px-6">
+        
+        <!-- About Section -->
+        <section class="w-full min-h-70 pt-30 pb-10">
+
+            <div class="text-center mb-10 flex flex-col gap-3">
+                <span class="text-xs md:text-sm lg:text-lg text-primary font-semibold py-1 px-2 outline rounded-full w-auto mx-auto">Get to Know Me</span>
+                <div>
+                    <h1 class="text-white text-3xl lg:text-5xl font-bold">About Me</h1>
+                    <p class="text-text-muted">The story, skills, and approach behind Forr3ver Dev.</p>
+                </div>
+            </div>
+
+            <div class="md:w-[80%] lg:w-[65%] mx-auto">
+                <div class="flex flex-col md:flex-row md:items-center gap-8 lg:w-[70%] mx-auto">
+                    <div class="lg:w-150">
+                    <h2 class="text-2xl text-primary font-bold mb-5">My Journey</h2>
+                    <p class="text-white">I got into web development the way a lot of people do — by trying to build something and getting hooked on the process. What started as curiosity turned into consistent practice: building landing pages, breaking things, fixing them, and slowly getting better at turning an idea into something people can actually use. Right now, I'm sharpening my skills through a software development program while working hands-on as a developer, and I make it a habit to build something new almost every week — a feature, a layout, a small tool — just to keep learning by doing. I'm not chasing perfection; I'm chasing steady, visible improvement, one project at a time.</p>
+                </div>
+                
+                <img src="images/about-image.png" alt="" class="hidden md:block w-80 flex-shrink-0 rounded-xl object-cover border">
+                </div>
+            </div>
+        </section>
+
+        <!-- How I Approach Work -->
+        <section class="pb-10">
+            <div class="lg:w-[65%] md:w-[80%] mx-auto">
+                <h2 class="text-2xl text-primary font-bold mb-5">How I Approach Work</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div class="border border-border rounded-lg p-3 text-white">
+                        <h3 class="font-bold text-primary b-1"><i class="fa-solid fa-wand-magic-sparkles mr-2"></i>Clarity over complexity</h3>
+                        <p>I'd rather ship something simple that works than something clever that confuses people.</p>
+                    </div>
+
+                    <div class="border border-border rounded-lg p-3 text-white">
+                        <h3 class="font-bold text-primary b-1"><i class="fa-regular fa-comment mr-2"></i>Honesty in scope</h3>
+                        <p>I tell you what's realistic, not just what sounds good, so there are no surprises later.</p>
+                    </div>
+
+                    <div class="border border-border rounded-lg p-3 text-white">
+                        <h3 class="font-bold text-primary b-1"><i class="fa-solid fa-crosshairs mr-2"></i>Details matter</h3>
+                        <p>Spacing, load speed, mobile experience — the small things are what make a site feel finished.</p>
+                    </div>
+
+                    <div class="border border-border rounded-lg p-3 text-white">
+                        <h3 class="font-bold text-primary b-1"><i class="fa-solid fa-wrench mr-2"></i>Built to be used</h3>
+                        <p>A website isn't a showpiece, it's a tool. I build with the end user in mind, not just the client's approval.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Skills -->
+        <section class="md:w-[80%] lg:w-[65%] mx-auto">
+            <h2 class="text-2xl text-primary font-bold mb-5">My Skills</h2>
+
+            <div>
+                <div class="grid grid-cols-2 md:grid-cols-4 text-white gap-3 mb-20">
+                    <div class="border border-muted text-center p-3 rounded-xl hover:-translate-y-1 cursor-pointer transition duration-300 flex md:flex-col justify-center items-center gap-3"><i class="fa-brands fa-html5"></i><div>HTML</div></div>
+                    <div class="border border-muted text-center p-3 rounded-xl hover:-translate-y-1 cursor-pointer transition duration-300 flex md:flex-col justify-center items-center gap-3"><i class="fa-brands fa-css3-alt"></i><div>CSS</div></div>
+                    <div class="border border-muted text-center p-3 rounded-xl hover:-translate-y-1 cursor-pointer transition duration-300 flex md:flex-col justify-center items-center gap-3"><i class="fa-brands fa-square-js"></i><div>JS</div></div>
+                    <div class="border border-muted text-center p-3 rounded-xl hover:-translate-y-1 cursor-pointer transition duration-300 flex md:flex-col justify-center items-center gap-3"><svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="rgb(255, 255, 255)" d="M320 128C234.7 128 181.3 170.7 160 256C192 213.3 229.3 197.3 272 208C296.3 214.1 313.7 231.8 333 251.3C364.4 283.1 400.7 320 480 320C565.3 320 618.7 277.3 640 192C608 234.7 570.7 250.7 528 240C503.7 233.9 486.3 216.2 467 196.7C435.6 164.9 399.3 128 320 128zM160 320C74.7 320 21.3 362.7 0 448C32 405.3 69.3 389.3 112 400C136.3 406.1 153.7 423.8 173 443.3C204.4 475.1 240.7 512 320 512C405.3 512 458.7 469.3 480 384C448 426.7 410.7 442.7 368 432C343.7 425.9 326.3 408.2 307 388.7C275.6 356.9 239.3 320 160 320z"/></svg><div>Tailwind</div></div>
+                    <div class="border border-muted text-center p-3 rounded-xl hover:-translate-y-1 cursor-pointer transition duration-300 flex md:flex-col justify-center items-center gap-3"><i class="fa-brands fa-git-alt"></i><div>Git</div></div>
+                    <div class="border border-muted text-center p-3 rounded-xl hover:-translate-y-1 cursor-pointer transition duration-300 flex md:flex-col justify-center items-center gap-3"><i class="fa-brands fa-github"></i><div>Github</div></div>
+                    <div class="border border-muted text-center p-3 rounded-xl hover:-translate-y-1 cursor-pointer transition duration-300 flex md:flex-col justify-center items-center gap-3"><i class="fa-brands fa-npm"></i><div>npm</div></div>
+                    <div class="border border-muted text-center p-3 rounded-xl hover:-translate-y-1 cursor-pointer transition duration-300 flex md:flex-col justify-center items-center gap-3"><i class="fa-brands fa-react"></i><div>React</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How I Work -->
+        <section>
+            <div class="md:w-[80%] lg:w-[65%] md:mx-auto">
+                <h2 class="text-2xl text-primary font-bold mb-5">How I Work</h2>
+
+                <div class="px-3 flex flex-col md:flex-row text-white">
+                    <div class="flex md:flex-col gap-6">
+                        <div class="flex flex-col items-center">
+                            <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center"><i class="text-white fa-solid fa-magnifying-glass"></i></div>
+                            <div class="w-px flex-1 bg-border/30 md:hidden"></div>
+                        </div>
+
+                        <div class="pb-8 md:text-center">
+                            <h3 class="font-bold">Discover</h3>
+                            <p>I start by understanding what you actually need — your goals, your audience, and what the site has to do for your business. No assumptions, no guesswork.</p>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:block w-80 h-px bg-border/30 mt-5 self-start"></div>
+
+                    <div class="flex md:flex-col gap-6">
+                        <div class="flex flex-col items-center">
+                            <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center"><i class="text-white fa-solid fa-code"></i></div>
+                            <div class="w-px flex-1 bg-border/30 md:hidden"></div>
+                        </div>
+
+                        <div class="pb-8 md:text-center">
+                            <h3 class="font-bold">Build</h3>
+                            <p>I design and code with intention, keeping you updated as the site takes shape. Clean, mobile-first, and built to actually work — not just look good.</p>
+                        </div>
+                    </div>
+
+                    <div class="hidden md:block w-80 h-px bg-border/30 mt-5 self-start"></div>
+
+                    <div class="flex md:flex-col gap-6">
+                        <div class="flex flex-col items-center">
+                            <div class="h-10 w-10 bg-primary rounded-full flex items-center justify-center"><i class="text-white fa-solid fa-rocket"></i></div>
+                        </div>
+
+                        <div class="md:text-center pb-8">
+                            <h3 class="font-bold">Launch</h3>
+                            <p>Once everything's tested and polished, I deploy it live and hand it over — ready to bring in customers from day one.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="w-full p-6 bg-gradient-to-r from-bg via-surface to-bg">
+        <div class="grid grid-cols-2 lg:w-[65%] mx-auto">
+            <div>
+                <h3 class="text-white">Forr3ver Dev</h3>
+
+                <div class="flex items-center gap-4 text-primary font-bold mb-5 text-lg my-3">
+                    <i class="fa-brands fa-github text-white"></i>
+
+                    <div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 132.004 132" class="w-5 h-5"><defs><linearGradient id="b"><stop offset="0" stop-color="#3771c8"/><stop stop-color="#3771c8" offset=".128"/><stop offset="1" stop-color="#60f" stop-opacity="0"/></linearGradient><linearGradient id="a"><stop offset="0" stop-color="#fd5"/><stop offset=".1" stop-color="#fd5"/><stop offset=".5" stop-color="#ff543e"/><stop offset="1" stop-color="#c837ab"/></linearGradient><radialGradient id="c" cx="158.429" cy="578.088" r="65" xlink:href="#a" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.402 454.004)" fx="158.429" fy="578.088"/><radialGradient id="d" cx="147.694" cy="473.455" r="65" xlink:href="#b" gradientUnits="userSpaceOnUse" gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.348 -458.493)" fx="147.694" fy="473.455"/></defs><path fill="url(#c)" d="M65.03 0C37.888 0 29.95.028 28.407.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468C4 13.126 1.5 18.394.595 24.656c-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28 7.79-2.01 14.24-7.29 17.75-14.53 1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624C116.9 4 111.64 1.5 105.372.596 102.335.157 101.73.027 86.19 0H65.03z" transform="translate(1.004 1)"/><path fill="url(#d)" d="M65.03 0C37.888 0 29.95.028 28.407.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468C4 13.126 1.5 18.394.595 24.656c-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28 7.79-2.01 14.24-7.29 17.75-14.53 1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624C116.9 4 111.64 1.5 105.372.596 102.335.157 101.73.027 86.19 0H65.03z" transform="translate(1.004 1)"/><path fill="#fff" d="M66.004 18c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C18.06 51.327 18 52.964 18 66s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97c-3.18 0-5.76 2.577-5.76 5.758 0 3.18 2.58 5.76 5.76 5.76 3.18 0 5.76-2.58 5.76-5.76 0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C79.617 90.645 90.65 79.613 90.65 66S79.616 41.35 66.003 41.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z"/></svg></div>
+
+                    <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.02 508.02" class="h-5 w-5"><defs><style>.a{fill:#1dbf73;}.b{fill:#fff;}</style></defs><circle class="a" cx="254.01" cy="254.01" r="254.01"/><circle class="b" cx="315.97" cy="162.19" r="26.87"/><path class="b" d="M345.87,207.66h-123V199.6c0-15.83,15.83-16.13,23.89-16.13,9.25,0,13.44.9,13.44.9v-43.6a155.21,155.21,0,0,0-19.71-1.19c-25.68,0-73.16,7.16-73.16,61.51V208h-22.4v40.31h22.4v85.1h-20.9v40.31H247.34V333.37H222.85v-85.1H290v85.1H269.13v40.31h97.65V333.37H345.87Z" transform="translate(-1.83 -0.98)"/></svg></div>
+                </div>
+            </div>
+
+            <ul class="text-primary font-bold flex flex-col gap-3">
+                <li class="hover:translate-x-2 duration-500"><a href="index.html">Home</a></li>
+                <li class="hover:translate-x-2 duration-500"><a href="about.html">About</a></li>
+                <li class="hover:translate-x-2 duration-500"><a href="my-works.html">My Works</a></li>
+                <li class="hover:translate-x-2 duration-500"><a href="services.html">My Services</a></li>
+                <li class="hover:translate-x-2 duration-500"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <hr class="mt-5 mb-5 border border-border block">
+
+        <p class="block text-white">&copy; 2026 Forr3ver Dev. All rights reserved.</p>
+     </footer>
+
+    <a href="#"><i class="fa-brands fa-whatsapp fixed bottom-5 right-5 text-2xl p-3 bg-green-400 rounded-full text-white animate-pulse"></i></a>
+</body>
+</html>
