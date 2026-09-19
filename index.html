@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/fe6bbb0a27.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Forr3ver Dev</title>
 </head>
 <body class="bg-bg w-full relative">
@@ -21,10 +25,9 @@
                 <li><a href="about.html" class="hover:text-primary transition duration-300">About</a></li>
                 <li><a href="my-works.html" class="hover:text-primary transition duration-300">My Works</a></li>
                 <li><a href="services.html" class="hover:text-primary transition duration-300">Services</a></li>
-                <li><a href="contact.html" class="hover:text-primary transition duration-300">Contact</a></li>
             </ul>
 
-            <button class="hidden md:flex z-1 text-white bg-primary px-3 py-2 rounded-3xl shadow-2xl shadow-bg hover:-translate-y-1 cursor-pointer transition duration-700">Contact Me</button>
+            <a href="#contact" class="hidden md:flex z-1 text-white bg-primary px-3 py-2 rounded-3xl shadow-2xl shadow-bg hover:-translate-y-1 cursor-pointer transition duration-700"><button class="cursor-pointer">Contact Me</button></a>
 
             <div class="md:hidden flex items-center gap-4">
                 <div class="h-8 w-8 rounded-full border-2 border-primary"></div>
@@ -50,20 +53,19 @@
                 <a href="about.html" class="w-full p-4"><li><i class="fa-regular fa-user mr-3"></i>About</li></a>
                 <a href="my-works.html" class="w-full p-4"><li><i class="fa-solid fa-briefcase mr-3"></i>My Works</li></a>
                 <a href="services.html" class="w-full p-4"><li><i class="fa-solid fa-layer-group mr-3"></i>Services</li></a>
-                <a href="contact.html" class="w-full p-4"><li><i class="fa-regular fa-envelope mr-3"></i>Contact</li></a>
             </ul>
 
-            <div class=" flex flex-col gap-4 mt-10">
-                <button class="bg-primary p-3 text-white cursor-pointer active:opacity-60 active:-translate-y-1 transition duration-400 rounded-lg">View My Works</button>
+            <div class=" flex flex-col gap-4 mt-10 text-center">
+                <a href="my-works.html" class="bg-primary p-3 text-white cursor-pointer active:opacity-60 active:-translate-y-1 transition duration-400 rounded-lg">View My Works</a>
 
-                <button class="outline outline-primary p-3 text-primary cursor-pointer active:bg-border active:-translate-y-1 transition duration-400 rounded-lg">Get in Touch</button>
+                <a href="contact.html" class="outline outline-primary p-3 text-primary cursor-pointer active:bg-border active:-translate-y-1 transition duration-400 rounded-lg">Get in Touch</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <main class="w-full px-6">
-        <Section class="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center gap-6 text-center pt-10">
+        <Section class="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center gap-6 text-center pt-10 reveal">
 
             <div class="mt-10 w-full flex lg:rounded-xl lg:shadow-2xl flex-col lg:flex-row lg:justify-center lg:items-center items-center lg:w-[60%] lg:bg-gradient-to-r from-bg via-surface to-primary">
                 <div class="flex flex-col gap-10 items-center lg:items-start lg:justify-between lg:px-6 border-primary">
@@ -91,30 +93,30 @@
                 </div>
 
                 <div class="h-100 lg:h-150 overflow-hidden rounded-full md:rounded-4xl md:w-[50%] lg:w-[30%] lg:bg-none bg-linear-to-r from-bg via-surface to-bg">
-                    <img src="images/hero-image.png" alt="My Image" class="md:h-full md:mx-auto">
+                    <img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808206/hero-image_joyjk0.png" alt="My Image" class="md:h-full md:mx-auto">
                 </div>
             </div>
         </Section>
 
         <!-- About Section -->
-        <section class="mt-10 lg:-mt-5 mb-20 md:px-20">
+        <section class="mt-10 lg:-mt-5 mb-20 md:px-20 reveal">
             <div class="md:grid grid-cols-2 gap-3 lg:w-[65%] lg:h-100 lg:mx-auto items-center">
                 <div class="text-white mb-10 lg:flex flex-col justify-center gap-6 lg:border-l-2 lg:border-t-2 lg:pl-6 lg:py-6 border-primary">
                     <h2 class="text-primary font-bold text-xl">About Me</h2>
                     <p>I'm Samson, a web developer who enjoys turning ideas into clean, fast, functional websites. My approach is simple: I design with intention, build with clean code, and care about the small details that make a website feel finished rather than just functional. Whether it's a landing page, a business site, or a custom feature, I focus on building things that actually work for the people using them.</p>
 
-                    <a href="about.html" class="w-[40%] p-3 outline-2 outline-primary rounded-xl text-primary font-bold cursor-pointer hover:bg-border transition duration-500 flex mt-5 flex items-center gap-5"><div>See More</div><i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808206/about-image_fepsko.png" class="w-[40%] p-3 outline-2 outline-primary rounded-xl text-primary font-bold cursor-pointer hover:bg-border transition duration-500 flex mt-5 flex items-center gap-5"><div>See More</div><i class="fa-solid fa-arrow-right"></i></a>
 
                 </div>
 
                 <div class="w-full border">
-                    <img src="images/about-image.png" alt="Me" class="h-100 mx-auto rounded-lg w-full object-cover">
+                    <img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808206/about-image_fepsko.png" alt="Me" class="h-100 mx-auto rounded-lg w-full object-cover">
                 </div>
             </div>
         </section>
 
         <!-- My Skills -->
-        <section class="md:w-[80%] lg:w-[65%] mx-auto">
+        <section class="md:w-[80%] lg:w-[65%] mx-auto reveal">
             <h2 class="text-2xl text-primary font-bold mb-5">My Skills</h2>
 
             <div>
@@ -188,7 +190,7 @@
                 <!-- Portfolio 1 -->
                 <div class="bg-surface rounded-xl flex flex-col justify-between">
                     <div class="relative group cursor-pointer" data-gallery="savora">
-                    <img src="images/portfolio/savora.jpg" alt="Savora" class="rounded-t-xl">
+                    <img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808746/savora_zpqxsi.jpg" alt="Savora" class="rounded-t-xl">
                     <div class="absolute top-0 w-full h-full bg-surface/20 flex items-center justify-center text-primary font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <div class="bg-border py-1 px-2 rounded-lg">
                             <i class="fa-solid fa-up-right-and-down-left-from-center mr-2"></i>View Gallery
@@ -214,7 +216,7 @@
             <!-- Portfolio 2 -->
             <div class="bg-surface rounded-xl flex flex-col justify-between">
                 <div class="relative group cursor-pointer" data-gallery="fithub">
-                    <img src="images/portfolio/fithub.jpg" alt="Fithub" class="rounded-t-xl">
+                    <img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808681/fithub_hzvkuq.jpg" alt="Fithub" class="rounded-t-xl">
                     <div class="absolute top-0 w-full h-full bg-surface/20 flex items-center justify-center text-primary font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <div class="bg-border py-1 px-2 rounded-lg">
                             <i class="fa-solid fa-up-right-and-down-left-from-center mr-2"></i>View Gallery
@@ -274,7 +276,7 @@
                             <li class="mb-2"><i class="fas fa-check mr-3"></i>3-5 day delivery</li>
                         </ul>
 
-                        <a href="#" class="w-full outline rounded-lg py-1 hover:bg-border hover:text-primary transition dduration text-center">Request Pricing</a>
+                        <a href="contact.html#form" class="w-full outline rounded-lg py-1 hover:bg-border hover:text-primary transition dduration text-center">Request Pricing</a>
                     </div>
 
                     <!-- Card 2-->
@@ -290,7 +292,7 @@
                             <li class="mb-2"><i class="fas fa-check mr-3"></i>5-7 day delivery</li>
                         </ul>
 
-                        <a href="#" class="w-full rounded-lg py-1 bg-primary font-bold hover:bg-border hover:text-primary transition duration text-center">Request Pricing</a>
+                        <a href="contact.html#form" class="w-full rounded-lg py-1 bg-primary font-bold hover:bg-border hover:text-primary transition duration text-center">Request Pricing</a>
 
                         <div class="absolute -top-3 right-5 text-primary px-3 rounded-full bg-surface font-bold text-sm">Popular</div>
                     </div>
@@ -308,14 +310,14 @@
                             <li class="mb-2"><i class="fas fa-check mr-3"></i>7-10 day delivery</li>
                         </ul>
 
-                        <a href="#" class="w-full outline rounded-lg py-1 hover:bg-border hover:text-primary transition dduration text-center">Request Pricing</a>
+                        <a href="contact.html#form" class="w-full outline rounded-lg py-1 hover:bg-border hover:text-primary transition dduration text-center">Request Pricing</a>
                     </div>
                 </div>
             </div>
           </section>
 
           <!-- Contact Section -->
-           <section class="mt-10 mb-10 pb-5">
+           <section id="contact" class="mt-10 mb-10 pb-5">
                 <div class="flex flex-col md:grid grid-cols-2 justify-center gap-6 lg:w-[65%] lg:mx-auto">
                     <div class="md:flex flex-col gap-4 md:pr-8">
                         <div class="md:pb-5 md:border-b border-primary">
@@ -325,8 +327,6 @@
 
                         <div class="hidden md:flex flex-col gap-2 text-white">
                             <div><i class="fa-regular fa-envelope mr-3 text-white"></i><a href="#" class="hover:text-primary transition duration-300">samsonkeyede12@gmail.com</a></div>
-
-                            <div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.02 508.02" class="h-5 w-5"><defs><style>.a{fill:#1dbf73;}.b{fill:#fff;}</style></defs><circle class="a" cx="254.01" cy="254.01" r="254.01"/><circle class="b" cx="315.97" cy="162.19" r="26.87"/><path class="b" d="M345.87,207.66h-123V199.6c0-15.83,15.83-16.13,23.89-16.13,9.25,0,13.44.9,13.44.9v-43.6a155.21,155.21,0,0,0-19.71-1.19c-25.68,0-73.16,7.16-73.16,61.51V208h-22.4v40.31h22.4v85.1h-20.9v40.31H247.34V333.37H222.85v-85.1H290v85.1H269.13v40.31h97.65V333.37H345.87Z" transform="translate(-1.83 -0.98)"/></svg><a href="#" class="hover:text-primary transition duration-300">https://www.fiverr.com/s/GPzl54a</a></div>
                         </div>
                     </div>
 
@@ -340,8 +340,6 @@
 
                     <div class="flex flex-col gap-2 text-white md:hidden">
                         <div><i class="fa-regular fa-envelope mr-3 text-white"></i><a href="#" class="hover:text-primary transition duration-300">samsonkeyede12@gmail.com</a></div>
-
-                        <div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.02 508.02" class="h-5 w-5"><defs><style>.a{fill:#1dbf73;}.b{fill:#fff;}</style></defs><circle class="a" cx="254.01" cy="254.01" r="254.01"/><circle class="b" cx="315.97" cy="162.19" r="26.87"/><path class="b" d="M345.87,207.66h-123V199.6c0-15.83,15.83-16.13,23.89-16.13,9.25,0,13.44.9,13.44.9v-43.6a155.21,155.21,0,0,0-19.71-1.19c-25.68,0-73.16,7.16-73.16,61.51V208h-22.4v40.31h22.4v85.1h-20.9v40.31H247.34V333.37H222.85v-85.1H290v85.1H269.13v40.31h97.65V333.37H345.87Z" transform="translate(-1.83 -0.98)"/></svg><a href="#" class="hover:text-primary transition duration-300">https://www.fiverr.com/s/GPzl54a</a></div>
                     </div>
                 </div>
            </section>
@@ -376,7 +374,7 @@
         <p class="block text-white">&copy; 2026 Forr3ver Dev. All rights reserved.</p>
      </footer>
 
-    <a href="#"><i class="fa-brands fa-whatsapp fixed bottom-5 right-5 text-2xl p-3 bg-green-400 rounded-full text-white animate-pulse"></i></a>
+    <a href="https://wa.me/2349024337630" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp fixed bottom-5 right-5 text-2xl p-3 bg-green-400 rounded-full text-white animate-pulse"></i></a>
 
     <script src="script.js"></script>
     <script src="portfolio-gallery.js"></script>

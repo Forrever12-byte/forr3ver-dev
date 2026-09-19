@@ -1,15 +1,15 @@
 const galleries = {
                 savora: [
-                    { type: 'image', src: 'images/portfolio/savora-desktop.png' },
-                    { type: 'image', src: 'images/portfolio/savora-mobile.png' },
-                    { type: 'image', src: 'images/portfolio/savora-order-feature.png' },
-                    { type: 'video', src: 'images/portfolio/savora-demo.mp4', thumb: 'images/portfolio/savora-demo-thumb.png' }
+                    { type: 'image', src: 'https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808749/savora-desktop_uhtq7l.png' },
+                    { type: 'image', src: 'https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808747/savora-mobile_panepz.png' },
+                    { type: 'image', src: 'https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808746/savora-order-feature_aq7rah.png' },
+                    { type: 'video', src: 'https://res.cloudinary.com/pnfbjbp5/video/upload/v1789808753/savora-demo_wdvukz.mp4', thumb: 'https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808747/savora-demo-thumb_gwbvjh.png' }
                 ],
                 fithub: [
-                    { type: 'image', src: 'images/portfolio/fithub-desktop.png' },
-                    { type: 'image', src: 'images/portfolio/fithub-mobile.png' },
-                    { type: 'image', src: 'images/portfolio/fithub-grid.jpg' },
-                    { type: 'video', src: 'images/portfolio/fithub-demo.mp4', thumb: 'images/portfolio/fithub-demo-thumb.png' }
+                    { type: 'image', src: 'https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808682/fithub-desktop_f6mv65.png' },
+                    { type: 'image', src: 'https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808680/fithub-mobile_mdmctz.png' },
+                    { type: 'image', src: 'https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808681/fithub-grid_xe0nek.jpg' },
+                    { type: 'video', src: 'https://res.cloudinary.com/pnfbjbp5/video/upload/v1789808684/fithub-demo_spy2gd.mp4', thumb: 'images/portfolio/fithub-demo-thumb.png' }
                 ]
             };
 

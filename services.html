@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/fe6bbb0a27.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Forr3ver Dev</title>
 </head>
 <body class="bg-bg w-full relative">
@@ -21,10 +25,9 @@
                 <li><a href="about.html" class="hover:text-primary transition duration-300">About</a></li>
                 <li><a href="my-works.html" class="hover:text-primary transition duration-300">My Works</a></li>
                 <li><a href="services.html" class="text-primary border-b-2 pb-1">Services</a></li>
-                <li><a href="contact.html" class="hover:text-primary transition duration-300">Contact</a></li>
             </ul>
 
-            <button class="hidden md:flex z-1 text-white bg-primary px-3 py-2 rounded-3xl shadow-2xl shadow-bg hover:-translate-y-1 cursor-pointer transition duration-700">Contact Me</button>
+            <a href="contact.html" class="hidden md:flex z-1 text-white bg-primary px-3 py-2 rounded-3xl shadow-2xl shadow-bg hover:-translate-y-1 cursor-pointer transition duration-700"><button class="cursor-pointer">Contact Me</button></a>
 
             <div class="md:hidden flex items-center gap-4">
                 <div class="h-8 w-8 rounded-full border-2 border-primary"></div>
@@ -50,13 +53,12 @@
                 <a href="about.html" class="w-full p-4"><li><i class="fa-regular fa-user mr-3"></i>About</li></a>
                 <a href="my-works.html" class="w-full p-4"><li><i class="fa-solid fa-briefcase mr-3"></i>My Works</li></a>
                 <a href="services.html" class="w-full"><li class="relative bg-surface rounded-xl border-l-5 border-primary p-4"><i class="fa-solid fa-layer-group mr-3 text-primary"></i><span class="animate-pulse absolute inline-flex h-2 w-2 rounded-full bg-primary right-10 top-[50%] -translate-y-[50%]"></span> Services</li></a>
-                <a href="contact.html" class="w-full p-4"><li><i class="fa-regular fa-envelope mr-3"></i>Contact</li></a>
             </ul>
 
-            <div class=" flex flex-col gap-4 mt-10">
-                <button class="bg-primary p-3 text-white cursor-pointer active:opacity-60 active:-translate-y-1 transition duration-400 rounded-lg">View My Works</button>
+            <div class="text-center flex flex-col gap-4 mt-10">
+                <a href="my-works.html" class="bg-primary p-3 text-white cursor-pointer active:opacity-60 active:-translate-y-1 transition duration-400 rounded-lg">View My Works</a>
 
-                <button class="outline outline-primary p-3 text-primary cursor-pointer active:bg-border active:-translate-y-1 transition duration-400 rounded-lg">Get in Touch</button>
+                <a href="contact.html" class="outline outline-primary p-3 text-primary cursor-pointer active:bg-border active:-translate-y-1 transition duration-400 rounded-lg">Get in Touch</a>
             </div>
         </div>
     </nav>
@@ -79,7 +81,7 @@
                             <li class="mb-2"><i class="fas fa-check mr-3"></i>3-5 day delivery</li>
                         </ul>
 
-                        <a href="#" class="w-full outline rounded-lg py-1 hover:bg-border hover:text-primary transition duration-300 text-center">Request Pricing</a>
+                        <a href="contact.html#form" class="w-full outline rounded-lg py-1 hover:bg-border hover:text-primary transition duration-300 text-center">Request Pricing</a>
                     </div>
 
                     <!-- Card 2-->
@@ -95,7 +97,7 @@
                             <li class="mb-2"><i class="fas fa-check mr-3"></i>5-7 day delivery</li>
                         </ul>
 
-                        <a href="#" class="w-full outline rounded-lg py-1 hover:bg-border hover:text-primary transition duration-300 text-center">Request Pricing</a>
+                        <a href="contact.html#form" class="w-full outline rounded-lg py-1 hover:bg-border hover:text-primary transition duration-300 text-center">Request Pricing</a>
 
                         <div class="absolute -top-3 right-5 text-primary px-3 rounded-full bg-surface font-bold text-sm">Popular</div>
                     </div>
@@ -113,7 +115,7 @@
                             <li class="mb-2"><i class="fas fa-check mr-3"></i>7-10 day delivery</li>
                         </ul>
 
-                        <a href="#" class="w-full outline rounded-lg py-1 hover:bg-border hover:text-primary transition duration-300 text-center">Request Pricing</a>
+                        <a href="contact.html#form" class="w-full outline rounded-lg py-1 hover:bg-border hover:text-primary transition duration-300 text-center">Request Pricing</a>
                     </div>
                 </div>
 
@@ -282,7 +284,7 @@
         <p class="block text-white">&copy; 2026 Forr3ver Dev. All rights reserved.</p>
      </footer>
 
-    <a href="#"><i class="fa-brands fa-whatsapp fixed bottom-5 right-5 text-2xl p-3 bg-green-400 rounded-full text-white animate-pulse"></i></a>
+    <a href="https://wa.me/2349024337630" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp fixed bottom-5 right-5 text-2xl p-3 bg-green-400 rounded-full text-white animate-pulse"></i></a>
 
     <script>
         document.querySelectorAll('.faq-item').forEach(item => {

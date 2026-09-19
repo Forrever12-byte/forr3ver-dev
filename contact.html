@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/fe6bbb0a27.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Forr3ver Dev</title>
 </head>
 <body class="bg-bg w-full relative">
@@ -17,14 +21,13 @@
             <div class="text-white z-1 text-bg text-center">Forr3ver Dev</div>
 
             <ul class="hidden md:flex justify-center items-center gap-4 font-semibold text-text-primary">
-                <li><a href="index.html" class="text-primary border-b-2 pb-1">Home</a></li>
+                <li><a href="index.html" class="hover:text-primary transition duration-300">Home</a></li>
                 <li><a href="about.html" class="hover:text-primary transition duration-300">About</a></li>
                 <li><a href="my-works.html" class="hover:text-primary transition duration-300">My Works</a></li>
                 <li><a href="services.html" class="hover:text-primary transition duration-300">Services</a></li>
-                <li><a href="contact.html" class="hover:text-primary transition duration-300">Contact</a></li>
             </ul>
 
-            <button class="hidden md:flex z-1 text-white bg-primary px-3 py-2 rounded-3xl shadow-2xl shadow-bg hover:-translate-y-1 cursor-pointer transition duration-700">Contact Me</button>
+            <a href="contact.html" class="hidden md:flex z-1 text-white bg-primary px-3 py-2 rounded-3xl shadow-2xl shadow-bg hover:-translate-y-1 cursor-pointer transition duration-700"><button class="cursor-pointer">Contact Me</button></a>
 
             <div class="md:hidden flex items-center gap-4">
                 <div class="h-8 w-8 rounded-full border-2 border-primary"></div>
@@ -50,13 +53,12 @@
                 <a href="about.html" class="w-full p-4"><li><i class="fa-regular fa-user mr-3"></i>About</li></a>
                 <a href="my-works.html" class="w-full p-4"><li><i class="fa-solid fa-briefcase mr-3"></i>My Works</li></a>
                 <a href="services.html" class="w-full p-4"><li><i class="fa-solid fa-layer-group mr-3"></i>Services</li></a>
-                <a href="contact.html" class="w-full"><li class="relative bg-surface rounded-xl border-l-5 border-primary p-4"><i class="fa-regular fa-envelope mr-3 text-primary"></i><span class="animate-pulse absolute inline-flex h-2 w-2 rounded-full bg-primary right-10 top-[50%] -translate-y-[50%]"></span> Contact</li></a>
             </ul>
 
-            <div class=" flex flex-col gap-4 mt-10">
-                <button class="bg-primary p-3 text-white cursor-pointer active:opacity-60 active:-translate-y-1 transition duration-400 rounded-lg">View My Works</button>
+            <div class="text-center flex flex-col gap-4 mt-10">
+                <a href="my-works.html" class="bg-primary p-3 text-white cursor-pointer active:opacity-60 active:-translate-y-1 transition duration-400 rounded-lg">View My Works</a>
 
-                <button class="outline outline-primary p-3 text-primary cursor-pointer active:bg-border active:-translate-y-1 transition duration-400 rounded-lg">Get in Touch</button>
+                <a href="contact.html" class="outline outline-primary p-3 text-primary cursor-pointer active:bg-border active:-translate-y-1 transition duration-400 rounded-lg">Get in Touch</a>
             </div>
         </div>
     </nav>
@@ -65,7 +67,7 @@
     <main class="w-full px-6">
         <Section class="w-full flex flex-col lg:flex-row items-center justify-center gap-6 text-center">
 
-                <div class="flex flex-col md:grid grid-cols-2 justify-center gap-6 lg:w-[65%] lg:mx-auto mt-30 md:mt-60">
+                <div class="flex flex-col md:grid grid-cols-2 justify-center gap-4 md:gap-6 lg:w-[65%] lg:mx-auto mt-20 md:mt-60">
                     <div class="md:flex flex-col gap-4 md:pr-8 text-left">
                         <div class="md:pb-5 md:border-b border-primary">
                             <h2 class="text-2xl text-primary font-bold mb-5">Contact Me</h2>
@@ -75,25 +77,20 @@
                         </div>
 
                         <div class="hidden md:flex flex-col gap-2 text-white">
-                            <div><i class="fa-regular fa-envelope mr-3 text-white"></i><a href="#" class="hover:text-primary transition duration-300">samsonkeyede12@gmail.com</a></div>
-
-                            <div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.02 508.02" class="h-5 w-5"><defs><style>.a{fill:#1dbf73;}.b{fill:#fff;}</style></defs><circle class="a" cx="254.01" cy="254.01" r="254.01"/><circle class="b" cx="315.97" cy="162.19" r="26.87"/><path class="b" d="M345.87,207.66h-123V199.6c0-15.83,15.83-16.13,23.89-16.13,9.25,0,13.44.9,13.44.9v-43.6a155.21,155.21,0,0,0-19.71-1.19c-25.68,0-73.16,7.16-73.16,61.51V208h-22.4v40.31h22.4v85.1h-20.9v40.31H247.34V333.37H222.85v-85.1H290v85.1H269.13v40.31h97.65V333.37H345.87Z" transform="translate(-1.83 -0.98)"/></svg><a href="#" class="hover:text-primary transition duration-300">https://www.fiverr.com/s/GPzl54a</a></div>
+                            <div><i class="fa-regular fa-envelope mr-3 text-white"></i>samsonkeyede12@gmail.com</div>
                         </div>
                     </div>
 
-                    <form class="pb-4 border-b md:border-none text-white flex flex-col gap-1">
-                        <input type="text" placeholder="Name" class="p-2 outline outline-border rounded-lg w-full mb-3">
-                        <input type="email" placeholder="Email" class="p-2 outline outline-border rounded-lg w-full mb-3">
-                        <textarea name="" id="" placeholder="Message" class="p-2 outline outline-border rounded-lg w-full mb-3"></textarea>
-
-                        <a href="#" class="bg-primary w-full p-2 rounded-lg w-full mb-3 font-bold hover:bg-border hover:text-primary transition duration-500">Send Message</a>
+                    <form id="contact-form" action="https://formspree.io/f/mbgllvjy" class="pb-1 md:pb-4 border-b md:border-none text-white flex flex-col gap-1" method="POST">
+                        <input type="text" name="Name" placeholder="Name" class="p-2 outline outline-border rounded-lg w-full mb-3" required>
+                        <input type="email" name="email" placeholder="Email" class="p-2 outline outline-border rounded-lg w-full mb-3" required>
+                        <textarea name="message" placeholder="Message" class="p-2 outline outline-border rounded-lg w-full mb-3" required></textarea>
+                        <button type="submit" class="bg-primary w-full p-2 rounded-lg w-full mb-3 font-bold hover:bg-border hover:text-primary transition duration-500">Send Message</button>
+                        <p id="form-status" class="text-sm mt-1 font-bold"></p>
                     </form>
+                    
+                    <div class="text-white md:hidden"><i class="fa-regular fa-envelope mr-3 text-white"></i>samsonkeyede12@gmail.com</div>
 
-                    <div class="flex flex-col gap-2 text-white md:hidden text-left">
-                        <div><i class="fa-regular fa-envelope mr-3 text-white"></i><a href="#" class="hover:text-primary transition duration-300">samsonkeyede12@gmail.com</a></div>
-
-                        <div class="flex items-center gap-3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 508.02 508.02" class="h-5 w-5"><defs><style>.a{fill:#1dbf73;}.b{fill:#fff;}</style></defs><circle class="a" cx="254.01" cy="254.01" r="254.01"/><circle class="b" cx="315.97" cy="162.19" r="26.87"/><path class="b" d="M345.87,207.66h-123V199.6c0-15.83,15.83-16.13,23.89-16.13,9.25,0,13.44.9,13.44.9v-43.6a155.21,155.21,0,0,0-19.71-1.19c-25.68,0-73.16,7.16-73.16,61.51V208h-22.4v40.31h22.4v85.1h-20.9v40.31H247.34V333.37H222.85v-85.1H290v85.1H269.13v40.31h97.65V333.37H345.87Z" transform="translate(-1.83 -0.98)"/></svg><a href="#" class="hover:text-primary transition duration-300">https://www.fiverr.com/s/GPzl54a</a></div>
-                    </div>
                 </div>
            </section>
     </main>
@@ -127,8 +124,42 @@
         <p class="block text-white">&copy; 2026 Forr3ver Dev. All rights reserved.</p>
      </footer>
 
-    <a href="#"><i class="fa-brands fa-whatsapp fixed bottom-5 right-5 text-2xl p-3 bg-green-400 rounded-full text-white animate-pulse"></i></a>
+    <a href="https://wa.me/2349024337630" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp fixed bottom-5 right-5 text-2xl p-3 bg-green-400 rounded-full text-white animate-pulse"></i></a>
 
     <script src="script.js"></script>
+
+    <script>
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('form-status');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const data = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    status.textContent = "Thanks! I'll get back to you soon.";
+                    status.classList.remove('text-red-400');
+                    status.classList.add('text-primary');
+                    form.reset();
+                } else {
+                    status.textContent = "Something went wrong. Please try again.";
+                    status.classList.remove('text-primary');
+                    status.classList.add('text-red-400');
+                }
+            } catch (error) {
+                status.textContent = "Network error. Please check your connection.";
+                status.classList.remove('text-primary');
+                status.classList.add('text-red-400');
+            }
+        });
+    </script>
 </body>
 </html>
