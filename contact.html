@@ -18,7 +18,7 @@
     <nav class="fixed w-full backdrop-blur-lg z-100">
         <!-- Desktop nav: Add bottom border glow -->
         <div class="flex items-center justify-around border border-border w-[90%] lg:w-[60%] mx-auto rounded-4xl mt-5 py-2 md:py-3 bg relative overflow-hidden">
-            <div class="text-white z-1 text-bg text-center">Forr3ver Dev</div>
+            <div class="text-white z-1 text-bg text-center -ml-10"><img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1789942462/ChatGPT_Image_Sep_20_2026_11_14_04_PM_dwqybq.png" alt="" class="w-8 h-8 md:w-10 md:h-10"></div>
 
             <ul class="hidden md:flex justify-center items-center gap-4 font-semibold text-text-primary">
                 <li><a href="index.html" class="hover:text-primary transition duration-300">Home</a></li>
@@ -30,7 +30,7 @@
             <a href="contact.html" class="hidden md:flex z-1 text-white bg-primary px-3 py-2 rounded-3xl shadow-2xl shadow-bg hover:-translate-y-1 cursor-pointer transition duration-700"><button class="cursor-pointer">Contact Me</button></a>
 
             <div class="md:hidden flex items-center gap-4">
-                <div class="h-8 w-8 rounded-full border-2 border-primary"></div>
+                <div class="h-8 w-8 rounded-full border-2 border-primary overflow-hidden"><img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1789808206/hero-image_joyjk0.png" alt=""></div>
 
                 <button id="menu-toggle" class="md:hidden text-primary w-8 h-4 z-1 flex flex-col items-center justify-between">
                     <span id="bar1" class="border text-white w-5 transform-[90%]"></span>
@@ -65,7 +65,7 @@
 
     <!-- Contact Section -->
     <main class="w-full px-6">
-        <Section class="w-full flex flex-col lg:flex-row items-center justify-center gap-6 text-center">
+        <Section class="w-full flex flex-col lg:flex-row items-center justify-center gap-6 text-center reveal-scale">
 
                 <div class="flex flex-col md:grid grid-cols-2 justify-center gap-4 md:gap-6 lg:w-[65%] lg:mx-auto mt-20 md:mt-60">
                     <div class="md:flex flex-col gap-4 md:pr-8 text-left">
@@ -82,9 +82,9 @@
                     </div>
 
                     <form id="contact-form" action="https://formspree.io/f/mbgllvjy" class="pb-1 md:pb-4 border-b md:border-none text-white flex flex-col gap-1" method="POST">
-                        <input type="text" name="Name" placeholder="Name" class="p-2 outline outline-border rounded-lg w-full mb-3" required>
-                        <input type="email" name="email" placeholder="Email" class="p-2 outline outline-border rounded-lg w-full mb-3" required>
-                        <textarea name="message" placeholder="Message" class="p-2 outline outline-border rounded-lg w-full mb-3" required></textarea>
+                        <input type="text" name="Name" placeholder="Name" class="p-2 outline outline-border rounded-lg w-full mb-3 focus:ring-2" required>
+                        <input type="email" name="email" placeholder="Email" class="p-2 outline outline-border rounded-lg w-full mb-3 focus:ring-2" required>
+                        <textarea name="message" placeholder="Message" class="p-2 outline outline-border rounded-lg w-full mb-3 focus:ring-2" required></textarea>
                         <button type="submit" class="bg-primary w-full p-2 rounded-lg w-full mb-3 font-bold hover:bg-border hover:text-primary transition duration-500">Send Message</button>
                         <p id="form-status" class="text-sm mt-1 font-bold"></p>
                     </form>

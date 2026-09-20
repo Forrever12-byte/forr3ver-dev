@@ -17,7 +17,7 @@ menuToggle.addEventListener('click', function() {
     menuToggle.classList.toggle('z-60');
 }); 
 
-const revealElements = document.querySelectorAll('.reveal');
+const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-fade');
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
