@@ -10,7 +10,7 @@ menuToggle.addEventListener('click', function() {
     bar1.classList.toggle('translate-y-2');
     bar2.classList.toggle('opacity-0');
     bar3.classList.toggle('-rotate-45');
-    bar3.classList.toggle('-translate-y-2')
+    bar3.classList.toggle('-translate-y-2');
 
     mobileMenu.classList.toggle('hidden');
     menuOverlay.classList.toggle('hidden');
